@@ -1,8 +1,6 @@
--- script that creates a table users with follwing fields
-
-CREATE TABLE IF NOT EXISTS users(
-	id INT AUTO_INCREMENT NOT NULL,
-	email varchar(255) UNIQUE NOT NULL,
-	name varchar(255),
-	PRIMARY KEY (id)
+-- Create unique users table
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+  email VARCHAR(255) NOT NULL UNIQUE,
+  name VARCHAR(255)
 );
