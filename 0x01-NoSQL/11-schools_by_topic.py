@@ -2,5 +2,6 @@
 """Python function that returns the list of school"""
 
 def schools_by_topic(mongo_collection, topic):
+
     return mongo_collection.find({"topics":  {"$in": [topic]}})
 
